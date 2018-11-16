@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  torifirstapp:
+    image: ${DOCKER_REGISTRY}torifirstapp
+    build:
+      context: .
+      dockerfile: ToriFirstApp/Dockerfile

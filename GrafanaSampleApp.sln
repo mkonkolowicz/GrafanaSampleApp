@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToriSampleApp", "GrafanaSampleApp\ToriSampleApp.csproj", "{A636415F-07D1-4D4E-8988-BEDD3B0DBF01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToriFirstApp", "ToriFirstApp\ToriFirstApp.csproj", "{9C18879F-257F-4302-8255-94C9331D6151}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3596ABF6-584C-48BE-9866-09D2DC25755D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A636415F-07D1-4D4E-8988-BEDD3B0DBF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A636415F-07D1-4D4E-8988-BEDD3B0DBF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A636415F-07D1-4D4E-8988-BEDD3B0DBF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A636415F-07D1-4D4E-8988-BEDD3B0DBF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C18879F-257F-4302-8255-94C9331D6151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C18879F-257F-4302-8255-94C9331D6151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C18879F-257F-4302-8255-94C9331D6151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C18879F-257F-4302-8255-94C9331D6151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3596ABF6-584C-48BE-9866-09D2DC25755D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3596ABF6-584C-48BE-9866-09D2DC25755D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3596ABF6-584C-48BE-9866-09D2DC25755D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3596ABF6-584C-48BE-9866-09D2DC25755D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
