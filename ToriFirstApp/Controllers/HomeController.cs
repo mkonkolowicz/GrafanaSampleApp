@@ -14,7 +14,7 @@ namespace ToriSampleApp.Controllers
         {
             ViewData["Message"] = "Maciek, Brandi and Victoria";
 
-            var counter = Metrics.CreateCounter("Page Load", "Navigation");
+            var counter = Metrics.CreateCounter("PageLoad", "Navigation");
             counter.Inc();
 
             return View();
