@@ -1,0 +1,31 @@
+#Service deployment: Provides a proxy to pods deployed. Notice the app selected matches the app label in the deployment below
+kind: Service
+apiVersion: v1
+metadata:
+  name: torifirstapp
+  labels:
+    app: torifirstapp
+spec:
+  selector:
+    app: torifirstapp
+  ports:
+  - name: web
+    port: 80
+#Service deployment: Provides a strategy for deploying pods and what to deploy into pods. Notice the container to be pulled down
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: torifirstapp
+spec:
+  template:
+    metadata:
+      labels:
+        app: torifirstapp
+    spec:
+      containers:
+      - name: torifirstapp
+        image: mkonkolowicz/torifirstapp:latest
+        ports:
+        - name: web
+          containerPort: 80
