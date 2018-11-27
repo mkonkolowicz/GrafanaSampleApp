@@ -13,4 +13,5 @@ spec:
       - name: torifirstapp
         image: mkonkolowicz/torifirstapp:latest
         ports:
-        - containerPort: 80
+        - name: web
+          containerPort: 80
