@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Prometheus;
 
 namespace ToriSampleApp.Controllers
 {
@@ -12,6 +13,9 @@ namespace ToriSampleApp.Controllers
         public IActionResult OurFamily()
         {
             ViewData["Message"] = "Maciek, Brandi and Victoria";
+
+            var counter = Metrics.CreateCounter("PageLoad", "Navigation");
+            counter.Inc();
 
             return View();
         }

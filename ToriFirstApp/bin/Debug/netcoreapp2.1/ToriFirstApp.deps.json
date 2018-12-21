@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "6c46f4a13597f59c548d02c3243b8f14a91c9f40"
+    "signature": "8eeeaee47d1d2ba609acb5eddf14fc04b56a917d"
   },
   "compilationOptions": {
     "defines": [
@@ -28,7 +28,11 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.0.1916590"
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.0.1916590",
+          "Prometheus.Client": "2.0.0",
+          "Prometheus.Client.MetricServer": "2.0.2",
+          "prometheus-net": "2.1.3",
+          "prometheus-net.AspNetCore": "2.1.3"
         },
         "runtime": {
           "ToriFirstApp.dll": {}
@@ -280,6 +284,82 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "prometheus-net/2.1.3": {
+        "dependencies": {
+          "protobuf-net": "2.3.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {}
+        }
+      },
+      "prometheus-net.AspNetCore/2.1.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore": "2.1.1",
+          "prometheus-net": "2.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.AspNetCore.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Prometheus.AspNetCore.dll": {}
+        }
+      },
+      "Prometheus.Client/2.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.Client.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Prometheus.Client.dll": {}
+        }
+      },
+      "Prometheus.Client.MetricServer/2.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Server.Kestrel": "2.1.1",
+          "Microsoft.AspNetCore.Server.Kestrel.Https": "2.1.1",
+          "Prometheus.Client": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.Client.MetricServer.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Prometheus.Client.MetricServer.dll": {}
+        }
+      },
+      "protobuf-net/2.3.4": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/protobuf-net.dll": {
+            "assemblyVersion": "2.3.4.0",
+            "fileVersion": "2.3.4.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/protobuf-net.dll": {}
         }
       },
       "System.Net.NameResolution/4.3.0": {
@@ -3348,6 +3428,41 @@
       "sha512": "sha512-R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "prometheus-net/2.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ae8U/scDLd//G+9kcdPq1H/82lk0d9m9UAFpzVN4Rv0tFuSP8FaZfdDEO9JbmioCJZ6rwrJGWRWmYfgvv3h+8g==",
+      "path": "prometheus-net/2.1.3",
+      "hashPath": "prometheus-net.2.1.3.nupkg.sha512"
+    },
+    "prometheus-net.AspNetCore/2.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oMzN06FIzMc4+3WGd1oSIfl7H9E5gkKrcYtUkeXkjY3UaE9XQ9K07+UVJHvyXtXyKd+9mdH1inDGA8GJ9EfyiA==",
+      "path": "prometheus-net.aspnetcore/2.1.3",
+      "hashPath": "prometheus-net.aspnetcore.2.1.3.nupkg.sha512"
+    },
+    "Prometheus.Client/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zRY9x/4Ja0mPii/fYoC6R1zssa7K76S25SllPjCs3B3c75dH5SMPc0KbLXWfR2sbHeC/UnMjJ0HGcbW8BqRdDQ==",
+      "path": "prometheus.client/2.0.0",
+      "hashPath": "prometheus.client.2.0.0.nupkg.sha512"
+    },
+    "Prometheus.Client.MetricServer/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WAXL6b42wpQFFoKiQCCz13oIDJTc7trdm7nnLMGCDce7WdFr0Jrm7ZpR4HQWU9/JzLNVdbD6p2qav69AQN9V+g==",
+      "path": "prometheus.client.metricserver/2.0.2",
+      "hashPath": "prometheus.client.metricserver.2.0.2.nupkg.sha512"
+    },
+    "protobuf-net/2.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hPR61ZIyjBb31UFV2TMYFp3liI0r+d0irZnpnnLrOuCu0R2Q1P235ba4s6UHyLRSCVmrORaMucNe/iBZlw036Q==",
+      "path": "protobuf-net/2.3.4",
+      "hashPath": "protobuf-net.2.3.4.nupkg.sha512"
     },
     "System.Net.NameResolution/4.3.0": {
       "type": "package",

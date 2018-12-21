@@ -5,7 +5,6 @@ C:\Github\GrafanaSampleApp\ToriFirstApp\bin\Debug\netcoreapp2.1\ToriFirstApp.dll
 C:\Github\GrafanaSampleApp\ToriFirstApp\bin\Debug\netcoreapp2.1\ToriFirstApp.pdb
 C:\Github\GrafanaSampleApp\ToriFirstApp\bin\Debug\netcoreapp2.1\ToriFirstApp.Views.dll
 C:\Github\GrafanaSampleApp\ToriFirstApp\bin\Debug\netcoreapp2.1\ToriFirstApp.Views.pdb
-C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.csprojAssemblyReference.cache
 C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.csproj.CoreCompileInputs.cache
 C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.RazorAssemblyInfo.cache
 C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.RazorAssemblyInfo.cs
@@ -31,3 +30,4 @@ C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.Vie
 C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.dll
 C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.pdb
 C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.csproj.CopyComplete
+C:\Github\GrafanaSampleApp\ToriFirstApp\obj\Debug\netcoreapp2.1\ToriFirstApp.csprojAssemblyReference.cache
