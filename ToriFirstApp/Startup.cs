@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -57,6 +58,7 @@ namespace ToriFirstApp
             });
 
             app.UseMetricServer();
+            TelemetryConfiguration.Active.TelemetryChannel.DeveloperMode = true;
         }
     }
 }
