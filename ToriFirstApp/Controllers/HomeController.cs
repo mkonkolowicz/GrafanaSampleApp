@@ -1,6 +1,7 @@
 ﻿using Microsoft.ApplicationInsights;
 using Microsoft.AspNetCore.Mvc;
 using Prometheus;
+using System.Collections.Generic;
 
 namespace ToriSampleApp.Controllers
 {
@@ -22,7 +23,8 @@ namespace ToriSampleApp.Controllers
             telemetryClient.Context.User.Id = "mkonkolowicz";
             telemetryClient.Context.Device.Id = "57L8HR2";
 
-            telemetryClient.GetMetric("FakeSocial").TrackValue(130692544);
+            var social = new Dictionary<string, string>() { { "ssn", "123-45-6789" } };
+            telemetryClient.TrackEvent("Social", social);
             
             return View();
         }
