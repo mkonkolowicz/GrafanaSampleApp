@@ -3,7 +3,7 @@ WORKDIR /app
 EXPOSE 80
 
 FROM microsoft/dotnet:2.1-sdk AS build
-WORKDIR /src/ToriFirstApp
+WORKDIR /src
 COPY ToriFirstApp/ToriFirstApp.csproj ToriFirstApp/
 RUN dotnet restore ToriFirstApp/ToriFirstApp.csproj
 COPY . .
