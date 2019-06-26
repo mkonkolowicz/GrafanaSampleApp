@@ -47,6 +47,8 @@ namespace ToriFirstApp
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseXRay("ToriSampleApp");
+
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
@@ -59,6 +61,7 @@ namespace ToriFirstApp
 
             app.UseMetricServer();
             TelemetryConfiguration.Active.TelemetryChannel.DeveloperMode = true;
+            
         }
     }
 }
